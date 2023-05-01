@@ -6,26 +6,26 @@
 <h3>Categorias</h3>
 
 <div class="mb-3">
-    <a class="btn btn-primary" href="/countries/create">Nueva Categoria</a>
+    <a class="btn btn-primary" href="/categories/create">Nueva Categoria</a>
 </div>
 
-<GenericList MyList="countries">
+<GenericList MyList="categories">
     <Body>
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th>País</th>
+                    <th>Categoria</th>
                     <th></th>
                 </tr>
             </thead>
             <tbody>
-                @foreach (var country in countries!)
+                @foreach (var category in categories!)
                 {
                     <tr>
-                        <td>@country.Name</td>
+                        <td>@category.Name</td>
                         <td>
-                            <a href="/countries/edit/@country.Id" class="btn btn-warning">Editar</a>
-                            <button class="btn btn-danger" @onclick=@(() => DeleteAsync(country.Id))>Borrar</button>
+                            <a href="/categories/edit/@category.Id" class="btn btn-warning">Editar</a>
+                            <button class="btn btn-danger" @onclick=@(() => DeleteAsync(category.Id))>Borrar</button>
                         </td>
                     </tr>
                 }
@@ -35,7 +35,7 @@
 </GenericList>
 
 @code {
-    private List<Country>? countries;
+    private List<Category>? categories;
 
     protected override async Task OnInitializedAsync()
     {
@@ -44,14 +44,14 @@
 
     private async Task LoadAsync()
     {
-        var httpResponse = await repository.GetAsync<List<Country>>("/api/countries");
+        var httpResponse = await repository.GetAsync<List<Category>>("/api/categories");
         if (httpResponse.Error)
         {
             var message = await httpResponse.GetErrorMessageAsync();
             await sweetAlertService.FireAsync("Error", message, SweetAlertIcon.Error);
             return;
         }
-        countries = httpResponse.Response;
+        categories = httpResponse.Response;
     }
 
     private async Task DeleteAsync(int id)
@@ -70,7 +70,7 @@
             return;
         }
 
-        var responseHTTP = await repository.DeleteAsync($"api/countries/{id}");
+        var responseHTTP = await repository.DeleteAsync($"api/categories/{id}");
         if (responseHTTP.Error)
         {
             if (responseHTTP.HttpResponseMessage.StatusCode == System.Net.HttpStatusCode.NotFound)
@@ -91,6 +91,6 @@
                 ShowConfirmButton = false,
                 Timer = 5000
             });
-        await toast.FireAsync(icon: SweetAlertIcon.Success, message: "País eliminado con éxito.");
+        await toast.FireAsync(icon: SweetAlertIcon.Success, message: "Categoria eliminada con éxito.");
     }
 }

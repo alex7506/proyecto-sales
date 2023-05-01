@@ -199,15 +199,15 @@
       "mscorlib.dll": "sha256-qqpKd+W+AFb6UxudEYEKzrz7ma81p5LrWUwPBVvHV4U=",
       "netstandard.dll": "sha256-OYYuPT3JUknj4LdYIa58zF7kDB3tCnLzjCSuhEjtKXM=",
       "System.Private.CoreLib.dll": "sha256-EVS7zPxPV\/41g2mzPwdXtwiigWxI\/SeAHme1IgyD6tc=",
-      "Sales.Shared.dll": "sha256-CGOQ+CuMSCNVsb446olYyDa\/W33am0BWkxF3g4EQp0E=",
-      "Sales.WEB.dll": "sha256-DgayyFpJNNnfl49zjKTwyxDmxvainemxDOTMVC8QqPw="
+      "Sales.Shared.dll": "sha256-2E\/QmIOeYIV9hMQCWWJW8aNsK17gHrf+Zsf\/yedku+0=",
+      "Sales.WEB.dll": "sha256-u6yRJOTEQDBZViGXKDO\/69InMemWtTuBELPgee\/uVxk="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "Sales.Shared.pdb": "sha256-Ph2UAWeIm3gdiAQ7xHYQbnPwAzU7RJYwZDNHw+cXq8Q=",
-      "Sales.WEB.pdb": "sha256-qZWBw7H0gGLpchn7agOM3Uh5Yx+XkJmgSF0Im+4JFjg="
+      "Sales.Shared.pdb": "sha256-Lnzh1nvuqCgnSrHHVlkGtn46nzAUDm8Rp1wPdPD7WoE=",
+      "Sales.WEB.pdb": "sha256-NZlepheuA6McA\/s19+7AiWiBqJjwk69KHIbwPQpMAq8="
     },
     "runtime": {
       "dotnet.7.0.5.63vhqevmo2.js": "sha256-codB25EodaFEP43MDCfMBuKXU4LqurUKnQrpoMIFnPs=",

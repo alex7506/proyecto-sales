@@ -5,17 +5,32 @@
 
 <h3>Categorias</h3>
 
-<div class="mb-3">
-    <a class="btn btn-primary" href="/categories/create">Nueva Categoria</a>
+<div class="mb-2" style="display: flex; flex-wrap:wrap; align-items: center;">
+    <div>
+        <a class="btn btn-primary" href="/categories/create">Nueva Categoria</a>
+    </div>
+    <div class="mx-2">
+        <input style="width: 400px;" type="text" class="form-control" id="titulo" placeholder="Buscar categoria..." @bind-value="Filter" />
+    </div>
+    <div>
+        <button type="button" class="btn btn-outline-primary" @onclick="ApplyFilterAsync">Filtrar</button>
+        <button type="button" class="btn btn-outline-danger" @onclick="CleanFilterAsync">Limpiar</button>
+    </div>
 </div>
 
-<GenericList MyList="categories">
+
+<Pagination CurrentPage="currentPage"
+            TotalPages="totalPages"
+            SelectedPage="SelectedPage" />
+
+
+<GenericList MyList="categories!">
     <Body>
         <table class="table table-striped">
             <thead>
                 <tr>
                     <th>Categoria</th>
-                    <th></th>
+                    <th style="width:180px"></th>
                 </tr>
             </thead>
             <tbody>
@@ -36,14 +51,60 @@
 
 @code {
     private List<Category>? categories;
+    private int currentPage = 1;
+    private int totalPages;
+
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public string Page { get; set; } = "";
+
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public string Filter { get; set; } = "";
+
 
     protected override async Task OnInitializedAsync()
     {
         await LoadAsync();
     }
 
-    private async Task LoadAsync()
+    private async Task SelectedPage(int page)
     {
+        currentPage = page;
+        await LoadAsync(page);
+    }
+
+
+    private async Task LoadAsync(int page = 1)
+    {
+        
+        if (!string.IsNullOrWhiteSpace(Page))
+        {
+            page = Convert.ToInt32(Page);
+        }
+
+        string url1 = string.Empty;
+        string url2 = string.Empty;
+
+        if (string.IsNullOrEmpty(Filter))
+        {
+            url1 = $"api/categories?page={page}";
+            url2 = $"api/categories/totalPages";
+        }
+        else
+        {
+            url1 = $"api/categories?page={page}&filter={Filter}";
+            url2 = $"api/categories/totalPages?filter={Filter}";
+        }
+
+
+        var responseHppt = await repository.GetAsync<List<Category>>(url1);
+        var responseHppt2 = await repository.GetAsync<int>(url2);
+        categories = responseHppt.Response!;
+        totalPages = responseHppt2.Response!;
+
+
+        /* 
         var httpResponse = await repository.GetAsync<List<Category>>("/api/categories");
         if (httpResponse.Error)
         {
@@ -52,6 +113,7 @@
             return;
         }
         categories = httpResponse.Response;
+        */
     }
 
     private async Task DeleteAsync(int id)
@@ -93,4 +155,18 @@
             });
         await toast.FireAsync(icon: SweetAlertIcon.Success, message: "Categoria eliminada con éxito.");
     }
+
+    private async Task CleanFilterAsync()
+    {
+        Filter = string.Empty;
+        await ApplyFilterAsync();
+    }
+
+    private async Task ApplyFilterAsync()
+    {
+        int page = 1;
+        await LoadAsync(page);
+        await SelectedPage(page);
+    }
+
 }

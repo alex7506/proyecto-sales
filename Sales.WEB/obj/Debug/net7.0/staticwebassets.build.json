@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "E5gUkFKZVrHFRRgpp3zaiSLHRAApxSmpWXwUyrgFea4=",
+  "Hash": "toWzp8EeUfBTxPfO7rqVVS+9xnVt1eJj/n21XQd1OUg=",
   "Source": "Sales.WEB",
   "BasePath": "/",
   "Mode": "Root",
@@ -678,6 +678,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\julia\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.5\\runtimes\\browser-wasm\\lib\\net7.0\\netstandard.dll"
+    },
+    {
+      "Identity": "C:\\ProjectsVisual\\Sales\\Sales.WEB\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Newtonsoft.Json.dll",
+      "SourceId": "Sales.WEB",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\ProjectsVisual\\Sales\\Sales.WEB\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Newtonsoft.Json.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\julia\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\net6.0\\Newtonsoft.Json.dll"
     },
     {
       "Identity": "C:\\ProjectsVisual\\Sales\\Sales.WEB\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Sales.Shared.dll",
@@ -5625,6 +5642,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\ProjectsVisual\\Sales\\Sales.WEB\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Primitives.dll"
+    },
+    {
+      "Identity": "C:\\ProjectsVisual\\Sales\\Sales.WEB\\obj\\Debug\\net7.0\\build-gz\\ONCgvPlA.gz",
+      "SourceId": "Sales.WEB",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\ProjectsVisual\\Sales\\Sales.WEB\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Newtonsoft.Json.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\ProjectsVisual\\Sales\\Sales.WEB\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Newtonsoft.Json.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\ProjectsVisual\\Sales\\Sales.WEB\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Newtonsoft.Json.dll"
     },
     {
       "Identity": "C:\\ProjectsVisual\\Sales\\Sales.WEB\\obj\\Debug\\net7.0\\build-gz\\oNHN6cGE.gz",

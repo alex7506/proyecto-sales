@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "U/5wcR5jqJHoDVqWfLYnGaC8MQcOe+sgcd6AG+I/59RjxTY33fhlBIQrWoXIEtEr9xKxuJoo5CPmK1m9q7keVw==",
+  "dgSpecHash": "IhDAf7vkgxb3XkE88khgXRTUIS+KbqhQ/oZ2wFDA1cs5Pe/Ax46ukZc4Md4lDA/AP5ocNXspeYKMH9eM7d5d5w==",
   "success": true,
   "projectFilePath": "C:\\ProjectsVisual\\Sales\\Sales.Shared\\Sales.Shared.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\julia\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

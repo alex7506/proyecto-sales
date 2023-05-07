@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "IO5pcoeB7TVvJ5ue72TLPKImFV+SJH7FXNvZf17TvYlP7Ui9Ui8Z+0QgWb1Awbhhi3hjnh5KCoPtX3MzSzSHiQ==",
+  "dgSpecHash": "uOfPgFe8LUX+k3Chorgrx8b8/RdUw9SrinfhZQWJmGepMWZOvAIJxogH76PF5QVn/q92+duXTq172ZgsW5DAtg==",
   "success": true,
   "projectFilePath": "C:\\ProjectsVisual\\Sales\\Sales.WEB\\Sales.WEB.csproj",
   "expectedPackageFiles": [
@@ -29,6 +29,7 @@
     "C:\\Users\\julia\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\julia\\.nuget\\packages\\microsoft.jsinterop\\7.0.2\\microsoft.jsinterop.7.0.2.nupkg.sha512",
     "C:\\Users\\julia\\.nuget\\packages\\microsoft.jsinterop.webassembly\\7.0.2\\microsoft.jsinterop.webassembly.7.0.2.nupkg.sha512",
+    "C:\\Users\\julia\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\julia\\.nuget\\packages\\system.io.pipelines\\7.0.0\\system.io.pipelines.7.0.0.nupkg.sha512",
     "C:\\Users\\julia\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\julia\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",

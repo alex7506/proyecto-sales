@@ -838,3 +838,7 @@ C:\ProjectsVisual\Sales\Sales.WEB\obj\Debug\net7.0\Sales.WEB.dll
 C:\ProjectsVisual\Sales\Sales.WEB\obj\Debug\net7.0\refint\Sales.WEB.dll
 C:\ProjectsVisual\Sales\Sales.WEB\obj\Debug\net7.0\Sales.WEB.pdb
 C:\ProjectsVisual\Sales\Sales.WEB\obj\Debug\net7.0\ref\Sales.WEB.dll
+C:\ProjectsVisual\Sales\Sales.WEB\bin\Debug\net7.0\wwwroot\_framework\Newtonsoft.Json.dll
+C:\ProjectsVisual\Sales\Sales.WEB\bin\Debug\net7.0\wwwroot\_framework\Newtonsoft.Json.dll.gz
+C:\ProjectsVisual\Sales\Sales.WEB\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\ProjectsVisual\Sales\Sales.WEB\obj\Debug\net7.0\build-gz\ONCgvPlA.gz

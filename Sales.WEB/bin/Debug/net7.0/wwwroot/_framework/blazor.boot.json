@@ -201,14 +201,14 @@
       "netstandard.dll": "sha256-OYYuPT3JUknj4LdYIa58zF7kDB3tCnLzjCSuhEjtKXM=",
       "System.Private.CoreLib.dll": "sha256-EVS7zPxPV\/41g2mzPwdXtwiigWxI\/SeAHme1IgyD6tc=",
       "Sales.Shared.dll": "sha256-y4edEz839yKJMcXf98PKAvCulXAFfKmL8gcbSmb4feA=",
-      "Sales.WEB.dll": "sha256-LtmDxakSSlOF+speTGU3rUBARixQD8lWhNzhN8dSV\/M="
+      "Sales.WEB.dll": "sha256-ZFXVAjrx1ZoFTS1TpKYyfaQY2OVDFgrL4mimUhMbBLQ="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "Sales.Shared.pdb": "sha256-JeRLrigz7rDiKE6UTuXLH8pEQkUzWB6GVwcS37EfkVs=",
-      "Sales.WEB.pdb": "sha256-WFS+PpYtbitt87OfhfZTnu+6Rd\/j2Qgrc1IZ4Gws2rg="
+      "Sales.WEB.pdb": "sha256-7SgXLJAT\/JwZcZrgTIeoA2e6rKzEzeUKb2RyHE6aYms="
     },
     "runtime": {
       "dotnet.7.0.5.63vhqevmo2.js": "sha256-codB25EodaFEP43MDCfMBuKXU4LqurUKnQrpoMIFnPs=",
